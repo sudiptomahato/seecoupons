@@ -55,10 +55,7 @@ jQuery(".storelogo").click(function() {
 });
 function viewCouponInfo()
 {
-jQuery('#couponinfo').reveal({
-     animation: 'fadeAndPop',       
-     animationspeed: 300,   
-     closeonbackgroundclick: true,   
-     dismissmodalclass: 'close-reveal-modal' 
-});
+jQuery('#couponinfo').pgwModal({
+		content: 'Modal Example 1'
+	});
 }
