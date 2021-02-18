@@ -34,7 +34,7 @@ return (result = new RegExp('(?:^|; )' + encodeURIComponent(key) + '=([^;]*)').e
 
 function addPopup()
 {
-	jQuery('<div id="popbg"></div>').appendTo('body').append('<div id="popupclx"></div><div id="popupbx"><div id="popupcx"></div><p style="padding: 0px 10px;"><b>'+popTitle+'</b></p><iframe src="//www.facebook.com/plugins/likebox.php?href='+fbUrl+'&amp;width&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=177971172285866" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:258px;" allowTransparency="true"></iframe><center><span id="blnk"><a href="http://techxt.com/2014/10/01/facebook-popup-like-box-widget-time-delay-blogger-wordpress/">Facebook Popup Widget</a></span></center></div>');
+	jQuery('<div id="popbg"></div>').appendTo('body').append('<div id="popupclx"></div><div id="popupbx"><div id="popupcx"></div><p style="padding: 0px 10px;"><b>'+popTitle+'</b></p><iframe src="//www.facebook.com/plugins/likebox.php?href='+fbUrl+'&amp;width&amp;height=258&amp;colorscheme=light&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=177971172285866" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:258px;" allowTransparency="true"></iframe></div>');
 if(jQuery.cookie('popup_user_login') != 'yes' ||cookieExpire==0){
 jQuery('#popbg').delay(delaySec).fadeIn('medium');
 jQuery('#popupcx, #popupclx').click(function(){
